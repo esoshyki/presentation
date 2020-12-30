@@ -1,0 +1,46 @@
+body
+  background: rgba(0, 0, 0, 0.7)
+  color: #fff
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+ 
+#root
+  display: flex
+
+.container
+  position: relative
+  left: 0
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-start
+
+@keyframes hide
+  0%
+    left: 0
+  100%
+    left: 100%
+
+@keyframes show
+  0%
+    left: -100%
+  100%
+    left: 0
+
+.container.hide
+  animation: hide 1s ease-out 0s
+
+.container.show
+  animation: show 1s ease-out 0s
+
+h2
+  font-size: 2rem
+  font-weight: 700
+
+p 
+  font-size: 1.1rem
+  font-weight: 500
+
+span.active
+  font-size: 1.1rem
+  font-weight: 500
+  color: yellow
